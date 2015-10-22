@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+<body>
+	<header></header>
+	<div class="container">
+		<div class="jumbotron">
+	    	<h1>toDoList</h1>
+	    	<p>Resize this responsive page to see the effect!</p>
+	    	<div class="form-group">
+  				<label for="usr">What do you want do? :</label>
+  				<input type="text" id="newItem" onkeydown="keyCode(event)" class="form-control" id="usr" onfocus="clearThis(this)">
+  				<button onclick="createItem()" type="button" class="btn btn-info">Submit</button>
+  				<button onclick="deleteItems()" type="button" class="btn btn-info">Clear All</button>
+  				<button onclick="checkItems()" type="button" class="btn btn-info">Clear Selected</button>
+  				<li  id="kill" value = "0"><div id="checkboxClone" class="checkbox"></div>
+  					<label id="labelClone"></label>
+  				</li>
+  				<ul id="demo"></ul>
+			</div>
+	  	</div>
+    </div>
+	<!--<h1 onclick="alert('Hello, World!');">click me</h1>-->
+	<script text="text/javascript" src="js/toDoList.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
